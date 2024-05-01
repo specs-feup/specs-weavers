@@ -1,0 +1,9 @@
+rootProject.name = 'SpecsWeavers'
+
+includeBuild("../../specs-java-libs/SpecsUtils")
+
+includeBuild("../../anyweaver/AnyWeaver")
+includeBuild("../../clava/ClavaWeaver")
+// kadabra not yet in Gradle format
+// jsweaver not yet in Gradle format
+includeBuild("../../smali/SmaliWeaver")
