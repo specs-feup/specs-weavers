@@ -34,7 +34,7 @@ dependencies {
     implementation ":AnyWeaver"
     implementation ":ClavaWeaver"
     implementation ":JavaWeaver"
-    implementation ":SmaliWeaver"
+    implementation ":AlpakkaWeaver"
 
     implementation ":srl-parser"
 }
