@@ -1,5 +1,5 @@
 plugins {
- 	id 'distribution'
+    id 'distribution'
 }
 
 // Java project
@@ -16,8 +16,8 @@ java {
 
 // Repositories providers
 repositories {
-	// Gearman
-	maven { url "https://oss.sonatype.org/content/repositories/snapshots"}
+    // Gearman
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 
     // smali
     google()
@@ -26,34 +26,37 @@ repositories {
 }
 
 dependencies {
-	implementation "junit:junit:4.12"
+    implementation "junit:junit:4.12"
 
 
-	implementation ":SpecsUtils"
+    implementation ":SpecsUtils"
 
-	implementation ":AnyWeaver"
-	implementation ":ClavaWeaver"
-	implementation ":SmaliWeaver"
+    implementation ":AnyWeaver"
+    implementation ":ClavaWeaver"
+    implementation ":JavaWeaver"
+    implementation ":SmaliWeaver"
+
+    implementation ":srl-parser"
 }
 
 java {
-	withSourcesJar()
+    withSourcesJar()
 }
 
 // Project sources
 sourceSets {
-   main {
-      java {
-         srcDir 'src'
-      }
+    main {
+        java {
+            srcDir 'src'
+        }
 
 /*
 	  resources {
 		srcDir 'resources'
 	  }      
-*/	  
-   }
-   
+*/
+    }
+
 }
 
 application {

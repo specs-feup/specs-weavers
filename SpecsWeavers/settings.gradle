@@ -4,6 +4,8 @@ includeBuild("../../specs-java-libs/SpecsUtils")
 
 includeBuild("../../anyweaver/AnyWeaver")
 includeBuild("../../clava/ClavaWeaver")
-// kadabra not yet in Gradle format
+includeBuild("../../kadabra/JavaWeaver")
 // jsweaver not yet in Gradle format
-includeBuild("../../smali/SmaliWeaver")
+includeBuild("../../alpakka/AlpakkaWeaver")
+
+includeBuild("../../specs-srl/antlr-project")
